@@ -18,6 +18,8 @@
   </div>
 </div>
 
+<%= render "form" %>
+
 <div class="form-horizontal">
   <%= form_for(@message) do |f| %>
   
@@ -34,9 +36,8 @@
     </div>
 <% end %>
 
-<div class="form-horizontal">
   <div class="form-group">
-    <%= f.label :名前, :class => "col-sm-1 control-label"%>
+    <%= f.label :name, "名前", :class => "col-sm-1 control-label"%>
   
     <div class="col-sm-3">
     <%= f.text_field :name, :class => "form-control" %>
@@ -45,7 +46,7 @@
 
 
   <div class="form-group">
-    <%= f.label :内容, :class => "col-sm-1 control-label"%>
+    <%= f.label :body, "内容", :class => "col-sm-1 control-label"%>
 
     <div class="col-sm-7">
     <%= f.text_area :body, :class => "form-control" %>
