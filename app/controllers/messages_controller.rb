@@ -6,6 +6,7 @@ class MessagesController < ApplicationController
    redirect_to root_path, notice: "メッセージを削除しました"
  end
  
+   
  def edit
  end
  
